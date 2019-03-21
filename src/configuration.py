@@ -42,7 +42,7 @@ def get_config():
 	parser.add_argument('--update_g', type=int, default=1, help='number of time to update generator during GAN training.')
 	parser.add_argument('--update_d', type=int, default=3, help='number of time to update discriminator during GAN training.')
 	parser.add_argument('--max_grad_norm', type=float, default=5.0, help='max gradient norm for clipping.')
-	parser.add_argument('--patient', type=int, default=15, help='number of trials before model checkpoint activates early stopping.')
+	parser.add_argument('--patient', type=int, default=400, help='number of trials before model checkpoint activates early stopping.')
 	#--generator--#
 	parser.add_argument('--g_lr', type=float, default=1e-4, help='generator learning rate.')
 	parser.add_argument('--g_hidden_dim', type=int, default=256, help='generator hidden state dimension of rnn cell.')
