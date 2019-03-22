@@ -291,7 +291,7 @@ def gan_train():
 				pickle.dump(r_history_loss, open(os.path.join(config.model_dir, 'r_history_loss.pkl'), 'wb'), True)
 			
 			#--earlystopping--#
-			if to_stop: break
+			# if to_stop: break
 			if r_history_loss[-1] < 0.00000001 and r_history_loss[-2] < 0.00000001: break
 
 		#--pre train end--#

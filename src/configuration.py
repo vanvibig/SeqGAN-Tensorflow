@@ -37,8 +37,8 @@ def get_config():
 	#--general settings--#
 	parser.add_argument('--beam_size', type=int, default=5, help='monte carlo search beam size.')
 	parser.add_argument('--batch_size', type=int, default=64, help='batch size')
-	parser.add_argument('--pre_train_epochs', type=int, default=400, help='generator supervise maximum likelihood estimation training epochs.')
-	parser.add_argument('--gan_train_epochs', type=int, default=400, help='generative adversarial with reinforcement learning training epochs.')
+	parser.add_argument('--pre_train_epochs', type=int, default=200, help='generator supervise maximum likelihood estimation training epochs.')
+	parser.add_argument('--gan_train_epochs', type=int, default=200, help='generative adversarial with reinforcement learning training epochs.')
 	parser.add_argument('--update_g', type=int, default=1, help='number of time to update generator during GAN training.')
 	parser.add_argument('--update_d', type=int, default=3, help='number of time to update discriminator during GAN training.')
 	parser.add_argument('--max_grad_norm', type=float, default=5.0, help='max gradient norm for clipping.')
